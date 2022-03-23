@@ -32,12 +32,33 @@
                             Contact
                         </a>
                     </nav>
-                    <button class="lg:hidden flex flex-col ml-4 text-white">
-                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1 ">
+                    <!-- Mobile menu -->
+                    <div class="hidden mobile-menu mt-40">
+                        <ul class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center sm:hidden bg-slate-700">
+                            <li>
+                                <a href="projects.html" class="py-2 px-6 flex active:text-red-500 font-semibold">
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="py-2 px-6 flex active:text-red-500 font-semibold">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="py-2 px-6 flex active:text-red-500 font-semibold">
+                                    Contact
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <button class="lg:hidden flex flex-col ml-4 text-white mobile-menu-button">
+                        <span class="w-8 h-1 bg-gray-800 dark:bg-white mb-1 rounded">
                         </span>
-                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        <span class="w-8 h-1 bg-gray-800 dark:bg-white mb-1 rounded">
                         </span>
-                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        <span class="w-8 h-1 bg-gray-800 dark:bg-white mb-1 rounded">
                         </span>
                     </button>
                 </div>
@@ -68,5 +89,6 @@
         </div>
     </main>
     <script src="typewriter.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
