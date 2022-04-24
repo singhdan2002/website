@@ -514,10 +514,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .m-4 {
   margin: 1rem;
 }
@@ -544,11 +540,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
 }
 
 .ml-3 {
@@ -627,20 +618,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 16rem;
 }
 
-.h-3 {
-  height: 0.75rem;
+.h-full {
+  height: 100%;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-4 {
-  height: 1rem;
+.max-h-full {
+  max-height: 100%;
 }
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-max {
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-full {
@@ -663,12 +660,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 16rem;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
 
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -754,8 +768,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.fill-gray-600 {
-  fill: #4b5563;
+.bg-neutral-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 82 82 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
 .px-6 {
@@ -781,11 +816,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .text-center {
@@ -851,10 +881,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 300;
 }
 
-.font-extrabold {
-  font-weight: 800;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -891,22 +917,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 200ms;
 }
 
-.duration-100 {
-  transition-duration: 100ms;
-}
-
-.duration-150 {
-  transition-duration: 150ms;
-}
-
-.hover\:block:hover {
-  display: block;
-}
-
-.hover\:flex:hover {
-  display: flex;
-}
-
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -916,16 +926,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-gray-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-slate-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-slate-50:hover {
@@ -945,14 +945,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .active\:text-red-500:active {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:block {
-  display: block;
-}
-
-.peer:hover ~ .peer-hover\:block {
-  display: block;
 }
 
 @media (prefers-color-scheme: dark) {
