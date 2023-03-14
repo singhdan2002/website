@@ -72,13 +72,13 @@ class Effect{
         this.width = this.canvas.width;
         this.height = this.canvas.height;
         this.particles = [];
-        this.numberOfParticles = 2000;
+        this.numberOfParticles = 5000;
         this.cellSize = 20;
         this.rows;
         this.cols;
         this.flowField = [];
-        this.curve = .5;
-        this.zoom = .1;
+        this.curve = -1.25;
+        this.zoom = .05;
         this.debug = false;
         this.init();
 
