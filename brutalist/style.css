@@ -1,0 +1,145 @@
+/* Global View AKA Desktop View*/
+body{
+    font-family: 'Asap', sans-serif;
+    color: #cdcecb;
+    background-color: #363536;
+}
+a{
+    color: #cdcecb;
+    text-decoration: none;
+}
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 140px 0 0;
+}
+.container h1{
+    font-weight: 600;
+    line-height: 1.25rem;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.header-container{
+    background-color: #020202;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    width: 30%;
+    margin: 0 0 40px;
+    background-color: #25292d;
+}
+.col p{
+    font-size: 0.825rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+    font-weight: bold;
+}
+.col:hover p{
+    transition: .25s;
+    color: rgb(244, 187, 113);
+}
+.hide-desktop-only{
+    display: none;
+}
+.col img{
+    width: 100%;
+    height: auto;
+}
+.mybutton{
+    padding: 10px 15px;
+    font-weight: bold;
+    margin: 0 0 0 20px;
+}
+.mybutton:hover{
+    transition: .1s;
+    color: hsla(34, 85%, 70%, 1);
+}
+.highlight{
+    font-weight: bold;
+}
+.highlight:hover{
+    transition: .1s;
+    color: hsla(34, 85%, 70%, 1);
+}
+.mob-wrapper{
+    display: none;
+}
+
+p.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+/* Tablet View */
+@media(max-width: 768px){
+    .col{
+        width: 45%;
+    }
+    .hide-desktop-only{
+        display: block;
+    }
+    .header-container{
+        position: relative;
+    }    
+    .container{
+        padding: 40px 0 0;
+    }
+    nav{
+        display: none;
+    }
+    .logo{
+        padding: 40px 0;
+    }
+    .mybutton{
+        display: block;
+        margin-left: 0px;
+    }
+    .mob-wrapper{
+        display: block;
+        padding: 0 30px 0 0;
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding: 10px 0 0;
+    }
+    .navbutton {
+        display: block;
+        background-color: #22272b;
+        padding: 15px 30px;
+        margin: 0 0 0 -70px;
+        text-align: center;
+    }
+    .highlight{
+        margin: 0 0 0 10px;
+    }
+}
+/* Mobile View */
+@media(max-width: 450px){
+    .col{
+        width: 100%;
+    }
+    .hide-mobile{
+        display: none;
+    }
+}
+
