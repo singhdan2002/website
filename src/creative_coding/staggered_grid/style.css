@@ -80,7 +80,7 @@
   #title {
     color: white;
     font-family: "Rubik", sans-serif;
-    font-size: 6vw;
+    font-size: 7vw;
     margin: 0px;
     pointer-events: none;
     transition: opacity 1200ms ease;
@@ -91,7 +91,7 @@
   #title > .fancy {
     color: var(--g2);
     font-family: 'Dancing Script', cursive;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 0.9em;
   }
   
